@@ -1,7 +1,10 @@
 <template>
   <div class="wrapper">
     <div class="main">
-      <nav class="navbar navbar-expand navbar-light navbar-bg">
+      <nav
+        class="navbar navbar-expand navbar-light navbar-bg"
+        style="position: fixed; width: 100%; z-index: 1000"
+      >
         <a class="sidebar-toggle">
           <i class="hamburger align-self-center"></i>
         </a>
@@ -80,7 +83,7 @@
               class="nav-flag dropdown-toggle"
               href="#"
               id="languageDropdown"
-              @click="selected_language = 'english'"
+              @click.prevent="selected_language = 'english'"
             >
               <img src="img/flags/gb.png" alt="English" />
             </a>
@@ -88,7 +91,7 @@
               class="nav-flag dropdown-toggle"
               href="#"
               id="languageDropdown"
-              @click="selected_language = 'italiano'"
+              @click.prevent="selected_language = 'italiano'"
             >
               <img src="img/flags/it.png" alt="Italiano" />
             </a>
@@ -96,7 +99,7 @@
               class="nav-flag dropdown-toggle"
               href="#"
               id="languageDropdown"
-              @click="selected_language = 'portugues'"
+              @click.prevent="selected_language = 'portugues'"
             >
               <img src="img/flags/br.png" alt="Português" />
             </a>
@@ -143,7 +146,7 @@
       </nav>
 
       <main class="content">
-        <div class="container-fluid p-0">
+        <div class="container-fluid p-0" style="margin-top: 50px">
           <h1 class="h3 mb-3">
             {{ language.marcelo_schneider_web_developer }}
           </h1>
@@ -158,42 +161,40 @@
                 </div>
                 <div class="card-body text-center">
                   <img
-                    src="img/avatars/avatar-4.jpg"
-                    alt="Stacie Hall"
+                    src="img/avatars/avatar-marcelo-schneider.jpg"
+                    :alt="my_name"
                     class="img-fluid rounded-circle mb-2"
                     width="128"
                     height="128"
                   />
-                  <h5 class="card-title mb-0">Stacie Hall</h5>
-                  <div class="text-muted mb-2">Lead Developer</div>
-
-                  <div>
-                    <a class="btn btn-primary btn-sm" href="#">Follow</a>
-                    <a class="btn btn-primary btn-sm" href="#"
-                      ><span data-feather="message-square"></span> Message</a
-                    >
+                  <h5 class="card-title mb-0">{{ my_name }}</h5>
+                  <div class="text-muted mb-2">
+                    {{ language.my_profession }}
                   </div>
                 </div>
                 <hr class="my-0" />
                 <div class="card-body">
-                  <h5 class="h6 card-title">Skills</h5>
-                  <a href="#" class="badge bg-primary me-1 my-1">HTML</a>
-                  <a href="#" class="badge bg-primary me-1 my-1">JavaScript</a>
-                  <a href="#" class="badge bg-primary me-1 my-1">Sass</a>
-                  <a href="#" class="badge bg-primary me-1 my-1">Angular</a>
-                  <a href="#" class="badge bg-primary me-1 my-1">Vue</a>
-                  <a href="#" class="badge bg-primary me-1 my-1">React</a>
-                  <a href="#" class="badge bg-primary me-1 my-1">Redux</a>
-                  <a href="#" class="badge bg-primary me-1 my-1">UI</a>
-                  <a href="#" class="badge bg-primary me-1 my-1">UX</a>
+                  <h5 class="h6 card-title">{{ language.skills.skill }}</h5>
+                  <a
+                    href="#"
+                    v-for="(skill, key) in language.skills.skills"
+                    :key="key"
+                    class="badge bg-primary me-1 my-1"
+                    >{{ skill }}</a
+                  >
                 </div>
                 <hr class="my-0" />
                 <div class="card-body">
-                  <h5 class="h6 card-title">About</h5>
+                  <h5 class="h6 card-title">{{ language.about.about }}</h5>
                   <ul class="list-unstyled mb-0">
                     <li class="mb-1">
                       <span data-feather="home" class="feather-sm me-1"></span>
-                      Lives in <a href="#">San Francisco, SA</a>
+                      {{ language.about.address.current.lives_in }}
+                      <a
+                        :href="language.about.address.current.google_maps"
+                        target="blank"
+                        >{{ language.about.address.current.city }}</a
+                      >
                     </li>
 
                     <li class="mb-1">
@@ -201,14 +202,22 @@
                         data-feather="briefcase"
                         class="feather-sm me-1"
                       ></span>
-                      Works at <a href="#">GitHub</a>
+                      {{ language.about.work_at.work_at }}
+                      <a :href="language.about.work_at.site" target="black">{{
+                        language.about.work_at.company
+                      }}</a>
                     </li>
                     <li class="mb-1">
                       <span
                         data-feather="map-pin"
                         class="feather-sm me-1"
                       ></span>
-                      From <a href="#">Boston</a>
+                      {{ language.about.address.from.from }}
+                      <a
+                        :href="language.about.address.from.google_maps"
+                        target="blank"
+                        >{{ language.about.address.from.city }}</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -497,17 +506,165 @@ export default {
       return {
         english: {
           marcelo_schneider_web_developer: `${this.my_name} - Web Developer`,
+          my_profession: "Web Developer",
           profile_details: "Profile Details",
+          skills: {
+            skill: "Skills",
+            skills: [
+              "Visual Studio Code",
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Vue Js 3",
+              "Vue Router 4",
+              "Vuex 4",
+              "PHP 8",
+              "Laravel 8",
+              "MySql",
+              "MariaDB",
+              "Npm",
+              "Composer",
+              "Packagist",
+              "Rest API",
+              "Git",
+              "cPanel",
+              "Cron Job",
+              "POO",
+              "XML",
+              "JSON",
+              "ECMAScript",
+              "UI",
+              "UX",
+            ],
+          },
+          about: {
+            about: "About me",
+            address: {
+              from: {
+                from: "From",
+                city: "Gramado RS, BR",
+                google_maps: "https://goo.gl/maps/GH2JP18Sbxo4axmVA",
+              },
+              current: {
+                lives_in: "Lives in",
+                city: "Rome, IT",
+                google_maps: "https://goo.gl/maps/Hc7UpuLZ2FjeEmLo9",
+              },
+            },
+            work_at: {
+              work_at: "Work at",
+              company: "Sellmasters",
+              site: "https://www.sellmasters.it/",
+            },
+          },
         },
         portugues: {
-          marcelo_schneider_web_developer:
-            `${this.my_name} - Desenvolvedor Web`,
+          marcelo_schneider_web_developer: `${this.my_name} - Desenvolvedor Web`,
+          my_profession: "Desenvolvedor Web",
           profile_details: "Detalhes de Perfil",
+          skills: {
+            skill: "Conhecimentos",
+            skills: [
+              "Visual Studio Code",
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Vue Js 3",
+              "Vue Router 4",
+              "Vuex 4",
+              "PHP 8",
+              "Laravel 8",
+              "MySql",
+              "MariaDB",
+              "Npm",
+              "Composer",
+              "Packagist",
+              "Rest API",
+              "Git",
+              "cPanel",
+              "Cron Job",
+              "POO",
+              "XML",
+              "JSON",
+              "ECMAScript",
+              "UI",
+              "UX",
+            ],
+          },
+          about: {
+            about: "Sobre min",
+            address: {
+              from: {
+                from: "De",
+                city: "Gramado RS, BR",
+                google_maps: "https://goo.gl/maps/GH2JP18Sbxo4axmVA",
+              },
+              current: {
+                city: "Roma, IT",
+                google_maps: "https://goo.gl/maps/Hc7UpuLZ2FjeEmLo9",
+                lives_in: "Mora em",
+              },
+            },
+            work_at: {
+              work_at: "Trabalho em",
+              company: "Sellmasters",
+              site: "https://www.sellmasters.it/",
+            },
+          },
         },
         italiano: {
-          marcelo_schneider_web_developer:
-            `${this.my_name} - Sviluppatore Web`,
+          marcelo_schneider_web_developer: `${this.my_name} - Sviluppatore Web`,
+          my_profession: "Sviluppatore Web",
           profile_details: "Dettagli del Profilo",
+          skills: {
+            skill: "Conoscenza",
+            skills: [
+              "Visual Studio Code",
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "Vue Js 3",
+              "Vue Router 4",
+              "Vuex 4",
+              "PHP 8",
+              "Laravel 8",
+              "MySql",
+              "MariaDB",
+              "Npm",
+              "Composer",
+              "Packagist",
+              "Rest API",
+              "Git",
+              "cPanel",
+              "Cron Job",
+              "POO",
+              "XML",
+              "JSON",
+              "ECMAScript",
+              "UI",
+              "UX",
+            ],
+          },
+          about: {
+            about: "A proposito di me",
+            address: {
+              from: {
+                from: "Dal",
+                city: "Gramado RS, BR",
+                google_maps: "https://goo.gl/maps/GH2JP18Sbxo4axmVA",
+              },
+              current: {
+                lives_in: "Vive a",
+                city: "Roma, IT",
+                google_maps: "https://goo.gl/maps/Hc7UpuLZ2FjeEmLo9",
+              },
+            },
+            work_at: {
+              work_at: "Lavoro a",
+              company: "Sellmasters",
+              site: "https://www.sellmasters.it/",
+            },
+          },
         },
       };
     },
