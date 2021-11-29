@@ -147,9 +147,36 @@
 
       <main class="content">
         <div class="container-fluid p-0" style="margin-top: 50px">
-          <h1 class="h3 mb-3">
-            {{ language.marcelo_schneider_web_developer }}
+          <h1 class="h3 mb-3 text-center">
+            {{ my_name }} | {{ language.my_profession }}
           </h1>
+
+          <div class="row my-3 r-1">
+            <div class="col-12">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="img/photos/header-background_teste.jpg"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="img/photos/header-background_teste.jpg"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 992px)"
+                  srcset="img/photos/header-background_teste.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  src="img/photos/header-background_teste.jpg"
+                  alt="Cover image"
+                  class="img-fluid rounded"
+                />
+              </picture>
+            </div>
+          </div>
 
           <div class="row">
             <div class="col-md-4 col-xl-3">
@@ -223,27 +250,35 @@
                 </div>
                 <hr class="my-0" />
                 <div class="card-body">
-                  <h5 class="h6 card-title">Elsewhere</h5>
+                  <h5 class="h6 card-title">{{ language.social_media }}</h5>
                   <ul class="list-unstyled mb-0">
                     <li class="mb-1">
-                      <span class="fas fa-globe fa-fw me-1"></span>
-                      <a href="#">staciehall.co</a>
-                    </li>
-                    <li class="mb-1">
-                      <span class="fab fa-twitter fa-fw me-1"></span>
-                      <a href="#">Twitter</a>
-                    </li>
-                    <li class="mb-1">
                       <span class="fab fa-facebook fa-fw me-1"></span>
-                      <a href="#">Facebook</a>
+                      <a href="https://www.facebook.com/lagocelo" target="black"
+                        >Facebook</a
+                      >
                     </li>
                     <li class="mb-1">
                       <span class="fab fa-instagram fa-fw me-1"></span>
-                      <a href="#">Instagram</a>
+                      <a
+                        href="https://www.instagram.com/marcelo.dias.schneider/"
+                        target="black"
+                        >Instagram</a
+                      >
                     </li>
                     <li class="mb-1">
                       <span class="fab fa-linkedin fa-fw me-1"></span>
-                      <a href="#">LinkedIn</a>
+                      <a
+                        href="https://www.linkedin.com/in/marcelo-dias-schneider-6392ba94/"
+                        target="black"
+                        >LinkedIn</a
+                      >
+                    </li>
+                    <li class="mb-1">
+                      <span class="fab fa-linkedin fa-fw me-1"></span>
+                      <a href="https://github.com/MarceloDiasSchneider"
+                        >Github</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -280,10 +315,51 @@
                 <div class="card-body h-100">
                   <div class="d-flex align-items-start">
                     <img
-                      src="img/avatars/avatar-5.jpg"
-                      width="36"
-                      height="36"
-                      class="rounded-circle me-2"
+                      src="img/logos/bitbucket.png"
+                      height="50"
+                      class="me-2"
+                      alt="Ashley Briggs"
+                    />
+                    <div class="flex-grow-1">
+                      <small class="float-end">5m ago</small>
+                      <strong>Ashley Briggs</strong> started following
+                      <strong>Stacie Hall</strong><br />
+                      <small class="text-muted">Today 7:51 pm</small><br />
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                    <img
+                      src="img/logos/composer.png"
+                      height="50"
+                      class="me-2"
+                      alt="Ashley Briggs"
+                    />
+                    <div class="flex-grow-1">
+                      <small class="float-end">5m ago</small>
+                      <strong>Ashley Briggs</strong> started following
+                      <strong>Stacie Hall</strong><br />
+                      <small class="text-muted">Today 7:51 pm</small><br />
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                    <img
+                      src="img/logos/cpanel.png"
+                      height="50"
+                      class="me-2"
+                      alt="Ashley Briggs"
+                    />
+                    <div class="flex-grow-1">
+                      <small class="float-end">5m ago</small>
+                      <strong>Ashley Briggs</strong> started following
+                      <strong>Stacie Hall</strong><br />
+                      <small class="text-muted">Today 7:51 pm</small><br />
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                    <img
+                      src="img/logos/cron_job.png"
+                      height="50"
+                      class="me-2"
                       alt="Ashley Briggs"
                     />
                     <div class="flex-grow-1">
@@ -382,7 +458,7 @@
                   <hr />
                   <div class="d-flex align-items-start">
                     <img
-                      src="img/avatars/avatar-2.jpg"
+                      src="img/"
                       width="36"
                       height="36"
                       class="rounded-circle me-2"
@@ -480,8 +556,8 @@
             </div>
             <div class="col-6 text-end">
               <p class="mb-0">
-                &copy; 2021 -
-                <a href="index.html" class="text-muted">AppStack</a>
+                2021 -
+                <a href="index.html" class="text-muted">{{ my_name }}</a>
               </p>
             </div>
           </div>
@@ -492,6 +568,8 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   components: {},
   data() {
@@ -502,172 +580,7 @@ export default {
     };
   },
   computed: {
-    languages() {
-      return {
-        english: {
-          marcelo_schneider_web_developer: `${this.my_name} - Web Developer`,
-          my_profession: "Web Developer",
-          profile_details: "Profile Details",
-          skills: {
-            skill: "Skills",
-            skills: [
-              "Visual Studio Code",
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "Vue Js 3",
-              "Vue Router 4",
-              "Vuex 4",
-              "PHP 8",
-              "Laravel 8",
-              "MySql",
-              "MariaDB",
-              "Npm",
-              "Composer",
-              "Packagist",
-              "Rest API",
-              "Git",
-              "cPanel",
-              "Cron Job",
-              "POO",
-              "XML",
-              "JSON",
-              "ECMAScript",
-              "UI",
-              "UX",
-            ],
-          },
-          about: {
-            about: "About me",
-            address: {
-              from: {
-                from: "From",
-                city: "Gramado RS, BR",
-                google_maps: "https://goo.gl/maps/GH2JP18Sbxo4axmVA",
-              },
-              current: {
-                lives_in: "Lives in",
-                city: "Rome, IT",
-                google_maps: "https://goo.gl/maps/Hc7UpuLZ2FjeEmLo9",
-              },
-            },
-            work_at: {
-              work_at: "Work at",
-              company: "Sellmasters",
-              site: "https://www.sellmasters.it/",
-            },
-          },
-        },
-        portugues: {
-          marcelo_schneider_web_developer: `${this.my_name} - Desenvolvedor Web`,
-          my_profession: "Desenvolvedor Web",
-          profile_details: "Detalhes de Perfil",
-          skills: {
-            skill: "Conhecimentos",
-            skills: [
-              "Visual Studio Code",
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "Vue Js 3",
-              "Vue Router 4",
-              "Vuex 4",
-              "PHP 8",
-              "Laravel 8",
-              "MySql",
-              "MariaDB",
-              "Npm",
-              "Composer",
-              "Packagist",
-              "Rest API",
-              "Git",
-              "cPanel",
-              "Cron Job",
-              "POO",
-              "XML",
-              "JSON",
-              "ECMAScript",
-              "UI",
-              "UX",
-            ],
-          },
-          about: {
-            about: "Sobre min",
-            address: {
-              from: {
-                from: "De",
-                city: "Gramado RS, BR",
-                google_maps: "https://goo.gl/maps/GH2JP18Sbxo4axmVA",
-              },
-              current: {
-                city: "Roma, IT",
-                google_maps: "https://goo.gl/maps/Hc7UpuLZ2FjeEmLo9",
-                lives_in: "Mora em",
-              },
-            },
-            work_at: {
-              work_at: "Trabalho em",
-              company: "Sellmasters",
-              site: "https://www.sellmasters.it/",
-            },
-          },
-        },
-        italiano: {
-          marcelo_schneider_web_developer: `${this.my_name} - Sviluppatore Web`,
-          my_profession: "Sviluppatore Web",
-          profile_details: "Dettagli del Profilo",
-          skills: {
-            skill: "Conoscenza",
-            skills: [
-              "Visual Studio Code",
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "Vue Js 3",
-              "Vue Router 4",
-              "Vuex 4",
-              "PHP 8",
-              "Laravel 8",
-              "MySql",
-              "MariaDB",
-              "Npm",
-              "Composer",
-              "Packagist",
-              "Rest API",
-              "Git",
-              "cPanel",
-              "Cron Job",
-              "POO",
-              "XML",
-              "JSON",
-              "ECMAScript",
-              "UI",
-              "UX",
-            ],
-          },
-          about: {
-            about: "A proposito di me",
-            address: {
-              from: {
-                from: "Dal",
-                city: "Gramado RS, BR",
-                google_maps: "https://goo.gl/maps/GH2JP18Sbxo4axmVA",
-              },
-              current: {
-                lives_in: "Vive a",
-                city: "Roma, IT",
-                google_maps: "https://goo.gl/maps/Hc7UpuLZ2FjeEmLo9",
-              },
-            },
-            work_at: {
-              work_at: "Lavoro a",
-              company: "Sellmasters",
-              site: "https://www.sellmasters.it/",
-            },
-          },
-        },
-      };
-    },
+    ...mapState(["languages"]),
     language() {
       return this.languages[this.selected_language];
     },
