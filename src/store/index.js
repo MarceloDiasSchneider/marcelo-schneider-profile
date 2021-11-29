@@ -9,7 +9,6 @@ export default createStore({
         skills: {
           skill: "Skills",
           skills: [
-            "Visual Studio Code",
             "HTML",
             "CSS",
             "JavaScript",
@@ -30,6 +29,7 @@ export default createStore({
             "POO",
             "XML",
             "JSON",
+            "Visual Studio Code",
             "ECMAScript",
             "UI",
             "UX",
@@ -63,7 +63,6 @@ export default createStore({
         skills: {
           skill: "Conhecimentos",
           skills: [
-            "Visual Studio Code",
             "HTML",
             "CSS",
             "JavaScript",
@@ -84,6 +83,7 @@ export default createStore({
             "POO",
             "XML",
             "JSON",
+            "Visual Studio Code",
             "ECMAScript",
             "UI",
             "UX",
@@ -117,7 +117,6 @@ export default createStore({
         skills: {
           skill: "Conoscenza",
           skills: [
-            "Visual Studio Code",
             "HTML",
             "CSS",
             "JavaScript",
@@ -138,6 +137,7 @@ export default createStore({
             "POO",
             "XML",
             "JSON",
+            "Visual Studio Code",
             "ECMAScript",
             "UI",
             "UX",

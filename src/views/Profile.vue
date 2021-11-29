@@ -191,8 +191,8 @@
                     src="img/avatars/avatar-marcelo-schneider.jpg"
                     :alt="my_name"
                     class="img-fluid rounded-circle mb-2"
-                    width="128"
-                    height="128"
+                    width="180"
+                    height="180"
                   />
                   <h5 class="card-title mb-0">{{ my_name }}</h5>
                   <div class="text-muted mb-2">
@@ -275,7 +275,7 @@
                       >
                     </li>
                     <li class="mb-1">
-                      <span class="fab fa-linkedin fa-fw me-1"></span>
+                      <span class="fab fa-github fa-fw me-1"></span>
                       <a href="https://github.com/MarceloDiasSchneider"
                         >Github</a
                       >
