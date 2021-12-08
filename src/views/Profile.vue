@@ -5,23 +5,9 @@
         class="navbar navbar-expand navbar-light navbar-bg"
         style="position: fixed; width: 100%; z-index: 1000"
       >
-        <a class="sidebar-toggle">
+        <a>
           <i class="hamburger align-self-center"></i>
         </a>
-
-        <form class="d-none d-sm-inline-block">
-          <div class="input-group input-group-navbar">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search projects…"
-              aria-label="Search"
-            />
-            <button class="btn" type="button">
-              <i class="align-middle" data-feather="search"></i>
-            </button>
-          </div>
-        </form>
 
         <ul class="navbar-nav">
           <li class="nav-item px-2 dropdown">
@@ -207,7 +193,7 @@
                     v-for="(skill, key) in language.skills.skills"
                     :key="key"
                     class="badge bg-primary me-1 my-1"
-                    >{{ skill }}</a
+                    >{{ skill.name }}</a
                   >
                 </div>
                 <hr class="my-0" />
@@ -310,63 +296,24 @@
                       </div>
                     </div>
                   </div>
-                  <h5 class="card-title mb-0">Activities</h5>
+                  <h5 class="card-title mb-0">{{ language.skills.skill }}</h5>
                 </div>
-                <div class="card-body h-100">
-                  <div class="d-flex align-items-start">
+                <div class="card-body h-100 row">
+                  <div
+                    class="d-flex align-items-start col-6 mb-1"
+                    v-for="(skill, key) in language.skills.skills"
+                    :key="key"
+                  >
                     <img
-                      src="img/logos/bitbucket.png"
-                      height="50"
+                      :src="skill.path_img"
+                      width="36"
                       class="me-2"
-                      alt="Ashley Briggs"
+                      :alt="skill.name"
                     />
                     <div class="flex-grow-1">
-                      <small class="float-end">5m ago</small>
-                      <strong>Ashley Briggs</strong> started following
-                      <strong>Stacie Hall</strong><br />
-                      <small class="text-muted">Today 7:51 pm</small><br />
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/logos/composer.png"
-                      height="50"
-                      class="me-2"
-                      alt="Ashley Briggs"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">5m ago</small>
-                      <strong>Ashley Briggs</strong> started following
-                      <strong>Stacie Hall</strong><br />
-                      <small class="text-muted">Today 7:51 pm</small><br />
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/logos/cpanel.png"
-                      height="50"
-                      class="me-2"
-                      alt="Ashley Briggs"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">5m ago</small>
-                      <strong>Ashley Briggs</strong> started following
-                      <strong>Stacie Hall</strong><br />
-                      <small class="text-muted">Today 7:51 pm</small><br />
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/logos/cron_job.png"
-                      height="50"
-                      class="me-2"
-                      alt="Ashley Briggs"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">5m ago</small>
-                      <strong>Ashley Briggs</strong> started following
-                      <strong>Stacie Hall</strong><br />
-                      <small class="text-muted">Today 7:51 pm</small><br />
+                      <!-- <small class="float-end">5m ago</small> -->
+                      <strong>{{ skill.name }}</strong> {{ skill.description }}
+                      <!-- <small class="text-muted">Today 7:51 pm</small><br /> -->
                     </div>
                   </div>
 
