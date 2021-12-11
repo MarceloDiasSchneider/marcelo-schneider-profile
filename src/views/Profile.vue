@@ -133,9 +133,15 @@
 
       <main class="content">
         <div class="container-fluid p-0" style="margin-top: 50px">
-          <h1 class="h3 mb-3 text-center">
-            {{ my_name }} | {{ language.my_profession }}
+          <h1 class="h3 mb-3 text-center" style="font-size: 40pt">
+            {{ my_name }}
           </h1>
+          <h2
+            class="h3 mb-3 text-center text-secondary"
+            style="font-size: 30pt"
+          >
+            {{ language.my_profession }}
+          </h2>
 
           <div class="row my-3 r-1">
             <div class="col-12">
@@ -300,7 +306,7 @@
                 </div>
                 <div class="card-body h-100 row">
                   <div
-                    class="d-flex align-items-start col-6 mb-1"
+                    class="d-flex align-items-start col-lg-6 mb-3"
                     v-for="(skill, key) in language.skills.skills"
                     :key="key"
                   >
@@ -316,7 +322,7 @@
                       <!-- <small class="text-muted">Today 7:51 pm</small><br /> -->
                     </div>
                   </div>
-
+                  <!-- 
                   <hr />
                   <div class="d-flex align-items-start">
                     <img
@@ -475,6 +481,7 @@
                   <div class="d-grid">
                     <a href="#" class="btn btn-primary">Load more</a>
                   </div>
+                   -->
                 </div>
               </div>
             </div>
