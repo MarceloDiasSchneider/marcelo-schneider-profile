@@ -148,21 +148,21 @@
               <picture>
                 <source
                   media="(max-width: 576px)"
-                  srcset="img/photos/header-background_teste.jpg"
+                  srcset="img/photos/header-background.jpg"
                   type="image/jpg"
                 />
                 <source
                   media="(max-width: 768px)"
-                  srcset="img/photos/header-background_teste.jpg"
+                  srcset="img/photos/header-background.jpg"
                   type="image/jpg"
                 />
                 <source
                   media="(max-width: 992px)"
-                  srcset="img/photos/header-background_teste.jpg"
+                  srcset="img/photos/header-background.jpg"
                   type="image/jpg"
                 />
                 <img
-                  src="img/photos/header-background_teste.jpg"
+                  src="img/photos/header-background.jpg"
                   alt="Cover image"
                   class="img-fluid rounded"
                 />
@@ -317,171 +317,9 @@
                       :alt="skill.name"
                     />
                     <div class="flex-grow-1">
-                      <!-- <small class="float-end">5m ago</small> -->
                       <strong>{{ skill.name }}</strong> {{ skill.description }}
-                      <!-- <small class="text-muted">Today 7:51 pm</small><br /> -->
                     </div>
                   </div>
-                  <!-- 
-                  <hr />
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/avatars/avatar.jpg"
-                      width="36"
-                      height="36"
-                      class="rounded-circle me-2"
-                      alt="Chris Wood"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">30m ago</small>
-                      <strong>Chris Wood</strong> posted something on
-                      <strong>Stacie Hall</strong>'s timeline<br />
-                      <small class="text-muted">Today 7:21 pm</small>
-
-                      <div class="border text-sm text-muted p-2 mt-1">
-                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum
-                        rhoncus, sem quam semper libero, sit amet adipiscing sem
-                        neque sed ipsum. Nam quam nunc, blandit vel, luctus
-                        pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-                        tincidunt tempus. Donec vitae sapien ut libero venenatis
-                        faucibus. Nullam quis ante.
-                      </div>
-
-                      <a href="#" class="btn btn-sm btn-danger mt-1"
-                        ><i class="feather-sm" data-feather="heart"></i> Like</a
-                      >
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/avatars/avatar-4.jpg"
-                      width="36"
-                      height="36"
-                      class="rounded-circle me-2"
-                      alt="Stacie Hall"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">1h ago</small>
-                      <strong>Stacie Hall</strong> posted a new blog<br />
-
-                      <small class="text-muted">Today 6:35 pm</small>
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/avatars/avatar-2.jpg"
-                      width="36"
-                      height="36"
-                      class="rounded-circle me-2"
-                      alt="Carl Jenkins"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">3h ago</small>
-                      <strong>Carl Jenkins</strong> posted two photos on
-                      <strong>Stacie Hall</strong>'s timeline<br />
-                      <small class="text-muted">Today 5:12 pm</small>
-
-                      <div class="row g-0 mt-1">
-                        <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                          <img
-                            src="img/photos/unsplash-1.jpg"
-                            class="img-fluid pe-2"
-                            alt="Unsplash"
-                          />
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                          <img
-                            src="img/photos/unsplash-2.jpg"
-                            class="img-fluid pe-2"
-                            alt="Unsplash"
-                          />
-                        </div>
-                      </div>
-
-                      <a href="#" class="btn btn-sm btn-danger mt-1"
-                        ><i class="feather-sm" data-feather="heart"></i> Like</a
-                      >
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/"
-                      width="36"
-                      height="36"
-                      class="rounded-circle me-2"
-                      alt="Carl Jenkins"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">1d ago</small>
-                      <strong>Carl Jenkins</strong> started following
-                      <strong>Stacie Hall</strong><br />
-                      <small class="text-muted">Yesterday 3:12 pm</small>
-
-                      <div class="d-flex align-items-start mt-1">
-                        <a class="pe-3" href="#">
-                          <img
-                            src="img/avatars/avatar-4.jpg"
-                            width="36"
-                            height="36"
-                            class="rounded-circle me-2"
-                            alt="Stacie Hall"
-                          />
-                        </a>
-                        <div class="flex-grow-1">
-                          <div class="border text-sm text-muted p-2 mt-1">
-                            Nam quam nunc, blandit vel, luctus pulvinar,
-                            hendrerit id, lorem. Maecenas nec odio et ante
-                            tincidunt tempus.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/avatars/avatar-4.jpg"
-                      width="36"
-                      height="36"
-                      class="rounded-circle me-2"
-                      alt="Stacie Hall"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">1d ago</small>
-                      <strong>Stacie Hall</strong> posted a new blog<br />
-                      <small class="text-muted">Yesterday 2:43 pm</small>
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div class="d-flex align-items-start">
-                    <img
-                      src="img/avatars/avatar.jpg"
-                      width="36"
-                      height="36"
-                      class="rounded-circle me-2"
-                      alt="Chris Wood"
-                    />
-                    <div class="flex-grow-1">
-                      <small class="float-end">1d ago</small>
-                      <strong>Chris Wood</strong> started following
-                      <strong>Stacie Hall</strong><br />
-                      <small class="text-muted">Yesterdag 1:51 pm</small>
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div class="d-grid">
-                    <a href="#" class="btn btn-primary">Load more</a>
-                  </div>
-                   -->
                 </div>
               </div>
             </div>
