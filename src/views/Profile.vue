@@ -89,87 +89,12 @@
             >
               <img src="img/flags/br.png" alt="Português" />
             </a>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-icon dropdown-toggle d-inline-block d-sm-none"
-                href="#"
-                data-bs-toggle="dropdown"
-              >
-                <i class="align-middle" data-feather="settings"></i>
-              </a>
-
-              <a
-                class="nav-link dropdown-toggle d-none d-sm-inline-block"
-                href="#"
-                data-bs-toggle="dropdown"
-              >
-                <img
-                  src="img/avatars/avatar-marcelo-schneider.jpg"
-                  class="avatar img-fluid rounded-circle me-1"
-                  :alt="my_name"
-                />
-                <span class="text-dark">{{ my_name }}</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-end">
-                <a class="dropdown-item" href="pages-profile.html"
-                  ><i class="align-middle me-1" data-feather="user"></i>
-                  Profile</a
-                >
-                <a class="dropdown-item" href="#"
-                  ><i class="align-middle me-1" data-feather="pie-chart"></i>
-                  Analytics</a
-                >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="pages-settings.html"
-                  >Settings & Privacy</a
-                >
-                <a class="dropdown-item" href="#">Help</a>
-                <a class="dropdown-item" href="#">Sign out</a>
-              </div>
-            </li>
           </ul>
         </div>
       </nav>
 
       <main class="content">
         <div class="container-fluid p-0" style="margin-top: 50px">
-          <h1 class="h3 mb-3 text-center" style="font-size: 40pt">
-            {{ my_name }}
-          </h1>
-          <h2
-            class="h3 mb-3 text-center text-secondary"
-            style="font-size: 30pt"
-          >
-            {{ language.my_profession }}
-          </h2>
-
-          <div class="row my-3 r-1">
-            <div class="col-12">
-              <picture>
-                <source
-                  media="(max-width: 576px)"
-                  srcset="img/photos/header-background.jpg"
-                  type="image/jpg"
-                />
-                <source
-                  media="(max-width: 768px)"
-                  srcset="img/photos/header-background.jpg"
-                  type="image/jpg"
-                />
-                <source
-                  media="(max-width: 992px)"
-                  srcset="img/photos/header-background.jpg"
-                  type="image/jpg"
-                />
-                <img
-                  src="img/photos/header-background.jpg"
-                  alt="Cover image"
-                  class="img-fluid rounded"
-                />
-              </picture>
-            </div>
-          </div>
-
           <div class="row">
             <div class="col-md-4 col-xl-3">
               <div class="card mb-3">
@@ -280,28 +205,45 @@
             <div class="col-md-8 col-xl-9">
               <div class="card">
                 <div class="card-header">
-                  <div class="card-actions float-end">
-                    <div class="dropdown show">
-                      <a
-                        href="#"
-                        data-bs-toggle="dropdown"
-                        data-bs-display="static"
-                      >
-                        <i
-                          class="align-middle"
-                          data-feather="more-horizontal"
-                        ></i>
-                      </a>
+                  <h2
+                    class="float-left h1 card-title text-center mb-0"
+                    style="font-size: 30pt"
+                  >{{ my_name }}</h2>
+                  <h5
+                    class="h2 mb-3 text-center text-secondary"
+                    style="font-size: 25pt"
+                  >
+                    {{ language.my_profession }}
+                  </h5>
 
-                      <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </div>
+                  <div class="row my-3 r-1">
+                    <div class="col-12">
+                      <picture>
+                        <source
+                          media="(max-width: 576px)"
+                          srcset="img/photos/header-background.jpg"
+                          type="image/jpg"
+                        />
+                        <source
+                          media="(max-width: 768px)"
+                          srcset="img/photos/header-background.jpg"
+                          type="image/jpg"
+                        />
+                        <source
+                          media="(max-width: 992px)"
+                          srcset="img/photos/header-background.jpg"
+                          type="image/jpg"
+                        />
+                        <img
+                          src="img/photos/header-background.jpg"
+                          alt="Cover image"
+                          class="img-fluid rounded"
+                        />
+                      </picture>
                     </div>
                   </div>
+                </div>
+                <div class="card-header">
                   <h5 class="card-title mb-0">{{ language.skills.skill }}</h5>
                 </div>
                 <div class="card-body h-100 row">
