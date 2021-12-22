@@ -97,7 +97,7 @@
         <div class="container-fluid p-0" style="margin-top: 50px">
           <div class="row">
             <div class="col-md-4 col-xl-3">
-              <div class="card mb-3">
+              <div class="card mb-3 sticky-top">
                 <div class="card-header">
                   <h5 class="card-title mb-0">
                     {{ language.profile_details }}
@@ -208,7 +208,9 @@
                   <h2
                     class="float-left h1 card-title text-center mb-0"
                     style="font-size: 30pt"
-                  >{{ my_name }}</h2>
+                  >
+                    {{ my_name }}
+                  </h2>
                   <h5
                     class="h2 mb-3 text-center text-secondary"
                     style="font-size: 25pt"
@@ -321,3 +323,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.sticky-top {
+  top: 90px;
+  z-index: 950;
+}
+</style>
