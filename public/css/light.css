@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -26889,4 +26891,10 @@ div.dataTables_wrapper span.select-item {
 }
 .sw-theme-arrows.sw-dark > .nav .nav-link.danger:after {
   border-left-color: #d9534f;
+}
+.ff-pushster{
+  font-family: 'Pushster', cursive;  
+  background: -webkit-linear-gradient( #599AFD, #0D6EFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -206,8 +206,15 @@
               <div class="card">
                 <div class="card-header">
                   <h2
-                    class="float-left h1 card-title text-center mb-0"
-                    style="font-size: 30pt"
+                    class="
+                      float-left
+                      h1
+                      card-title
+                      text-center
+                      mb-0
+                      ff-pushster
+                    "
+                    style="font-size: 40pt"
                   >
                     {{ my_name }}
                   </h2>
@@ -246,7 +253,7 @@
                   </div>
                 </div>
                 <div class="card-header">
-                  <h5 class="card-title mb-0">{{ language.skills.skill }}</h5>
+                  <h5 class="card-title mb-0">{{ language.skills.title }}</h5>
                 </div>
                 <div class="card-body h-100 row">
                   <div
@@ -262,6 +269,46 @@
                     />
                     <div class="flex-grow-1">
                       <strong>{{ skill.name }}</strong> {{ skill.description }}
+                    </div>
+                  </div>
+                </div>
+                <div class="card-header">
+                  <h5 class="card-title mb-0">
+                    {{ language.education_and_training.title }}
+                  </h5>
+                </div>
+                <div class="card-body h-100 row">
+                  <div
+                    class="d-flex align-items-start col-lg-6 mb-3"
+                    v-for="(course, key) in language.education_and_training
+                      .courses"
+                    :key="key"
+                  >
+                    <img
+                      :src="course.path_img"
+                      width="36"
+                      class="me-2"
+                      :alt="course.title"
+                    />
+                    <div class="flex-grow-1">
+                      <h4 class="h4">
+                        {{ course.title }}
+                      </h4>
+                      <p class="m-0">
+                        <span class="fst-italic">{{ course.institution }}</span>
+                      </p>
+                      <p class="m-0">{{ course.country_address }}</p>
+                      <p>
+                        {{
+                          language.education_and_training.courses_key
+                            .course_details
+                        }}: {{ course.hours }} |
+                        {{ course.training_period }}
+                      </p>
+                      <a :href="course.link" target="blank">{{
+                        language.education_and_training.courses_key
+                          .see_more_details
+                      }}</a>
                     </div>
                   </div>
                 </div>

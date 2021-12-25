@@ -3,7 +3,7 @@
     "my_profession": "Fullstack Developer",
     "profile_details": "Profile Details",
     "skills": {
-      "skill": "Skills",
+      "title": "Knowledge and skills",
       "skills": {
         "html": {
           "name": "HTML 5",
@@ -118,7 +118,8 @@
         "visualstudiocode": {
           "name": "Visual Studio Code",
           "description": "is a source code editor developed by Microsoft. Includes debugging support, a built-in Git check, Syntax highlighting, and code refactoring.",
-          "path_img": "img/logos/vs_code.png"        }
+          "path_img": "img/logos/vs_code.png"
+        }
       }
     },
     "about": {
@@ -140,6 +141,69 @@
         "company": "Sellmasters",
         "site": "https://www.sellmasters.it/"
       }
+    },
+    "education_and_training": {
+      "title": "Education and training",
+      "courses_key": {
+        "see_more_details": "See more details about this course",
+        "course_details": "Course details"
+      },
+      "courses": [
+        {
+          "title": "Algorithm - Programing Logic",
+          "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
+          "hours": "40 hours",
+          "training_period": "01/01/2018 – 30/06/2018",
+          "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
+          "link": "https://www.cursoemvideo.com/curso/html5/",
+          "path_img": "img/courses/html5.jpg"
+        },
+        {
+          "title": "Algorithm - Programing Logic",
+          "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
+          "hours": "40 hours",
+          "training_period": "01/01/2018 – 30/06/2018",
+          "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
+          "link": "https://www.cursoemvideo.com/curso/html5/",
+          "path_img": "img/courses/html5.jpg"
+        },
+        {
+          "title": "Algorithm - Programing Logic",
+          "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
+          "hours": "40 hours",
+          "training_period": "01/01/2018 – 30/06/2018",
+          "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
+          "link": "https://www.cursoemvideo.com/curso/html5/",
+          "path_img": "img/courses/html5.jpg"
+        },
+        {
+          "title": "Algorithm - Programing Logic",
+          "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
+          "hours": "40 hours",
+          "training_period": "01/01/2018 – 30/06/2018",
+          "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
+          "link": "https://www.cursoemvideo.com/curso/html5/",
+          "path_img": "img/courses/html5.jpg"
+        },
+        {
+          "title": "Algorithm - Programing Logic",
+          "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
+          "hours": "40 hours",
+          "training_period": "01/01/2018 – 30/06/2018",
+          "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
+          "link": "https://www.cursoemvideo.com/curso/html5/",
+          "path_img": "img/courses/html5.jpg"
+        },
+        {
+          "title": "Algorithm - Programing Logic",
+          "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
+          "hours": "40 hours",
+          "training_period": "01/01/2018 – 30/06/2018",
+          "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
+          "link": "https://www.cursoemvideo.com/curso/html5/",
+          "path_img": "img/courses/html5.jpg"
+        }
+      ]
     },
     "social_media": "Social Media"
   },
