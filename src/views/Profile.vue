@@ -69,25 +69,12 @@
               class="nav-flag dropdown-toggle"
               href="#"
               id="languageDropdown"
-              @click.prevent="selected_language = 'english'"
+              v-for="(lenguage, key) in config.lenguages"
+              :key="key"
+              :title="lenguage.title"
+              @click.prevent="select_lenguage({ language: lenguage.lenguage })"
             >
-              <img src="img/flags/gb.png" alt="English" />
-            </a>
-            <a
-              class="nav-flag dropdown-toggle"
-              href="#"
-              id="languageDropdown"
-              @click.prevent="selected_language = 'italiano'"
-            >
-              <img src="img/flags/it.png" alt="Italiano" />
-            </a>
-            <a
-              class="nav-flag dropdown-toggle"
-              href="#"
-              id="languageDropdown"
-              @click.prevent="selected_language = 'portugues'"
-            >
-              <img src="img/flags/br.png" alt="Português" />
+              <img :src="lenguage.img_path" :alt="lenguage.title" />
             </a>
           </ul>
         </div>
@@ -352,6 +339,8 @@
 
 <script>
 import { mapState } from "vuex";
+import { mapGetters } from "vuex";
+import { mapActions } from "vuex";
 
 export default {
   components: {},
@@ -362,11 +351,12 @@ export default {
       selected_language: "english",
     };
   },
+  methods: {
+    ...mapActions(["select_lenguage"]),
+  },
   computed: {
-    ...mapState(["languages"]),
-    language() {
-      return this.languages[this.selected_language];
-    },
+    ...mapState(["languages", "config"]),
+    ...mapGetters(["language"]),
   },
 };
 </script>
