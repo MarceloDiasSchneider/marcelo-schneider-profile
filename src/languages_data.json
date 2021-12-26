@@ -173,55 +173,73 @@
             "title": "Algorithm - Programing Logic",
             "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
             "hours": "40 hours",
-            "training_period": "01/01/2018 – 30/06/2018",
+            "training_period": "01/01/2018 – 30/05/2018",
+            "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
+            "link": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+            "path_img": "img/courses/algorithm.jpg"
+          },
+          {
+            "title": "Basic PHP",
+            "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
+            "hours": "40 hours",
+            "training_period": "01/07/2018 – 30/11/2018",
+            "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
+            "link": "https://www.cursoemvideo.com/curso/php-basico/",
+            "path_img": "img/courses/php.jpg"
+          },
+          {
+            "title": "HTML 5, CSS 3 and Javascipt",
+            "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
+            "hours": "40 hours",
+            "training_period": "01/07/2018 – 30/11/2018",
             "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
             "link": "https://www.cursoemvideo.com/curso/html5/",
             "path_img": "img/courses/html5.jpg"
           },
           {
-            "title": "Algorithm - Programing Logic",
+            "title": "PHP OOP",
             "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
             "hours": "40 hours",
-            "training_period": "01/01/2018 – 30/06/2018",
+            "training_period": "01/01/2019 – 01/06/2019",
             "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
-            "link": "https://www.cursoemvideo.com/curso/html5/",
-            "path_img": "img/courses/html5.jpg"
+            "link": "https://www.cursoemvideo.com/curso/php-poo/",
+            "path_img": "img/courses/php-oop.jpg"
           },
           {
-            "title": "Algorithm - Programing Logic",
+            "title": "MySQL",
             "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
             "hours": "40 hours",
-            "training_period": "01/01/2018 – 30/06/2018",
+            "training_period": "01/01/2019 – 30/06/2019",
             "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
-            "link": "https://www.cursoemvideo.com/curso/html5/",
-            "path_img": "img/courses/html5.jpg"
+            "link": "https://www.cursoemvideo.com/curso/mysql/",
+            "path_img": "img/courses/mysql.jpg"
           },
           {
-            "title": "Algorithm - Programing Logic",
+            "title": "Computer network",
             "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
-            "hours": "40 hours",
-            "training_period": "01/01/2018 – 30/06/2018",
+            "hours": "20 hours",
+            "training_period": "01/07/2020 – 30/11/2020",
             "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
-            "link": "https://www.cursoemvideo.com/curso/html5/",
-            "path_img": "img/courses/html5.jpg"
+            "link": "https://www.cursoemvideo.com/curso/redes-de-computadores/",
+            "path_img": "img/courses/network.jpg"
           },
           {
-            "title": "Algorithm - Programing Logic",
+            "title": "Git and GitHub",
             "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
-            "hours": "40 hours",
-            "training_period": "01/01/2018 – 30/06/2018",
+            "hours": "20 hours",
+            "training_period": "01/07/2020 – 30/11/2020",
             "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
-            "link": "https://www.cursoemvideo.com/curso/html5/",
-            "path_img": "img/courses/html5.jpg"
+            "link": "https://www.cursoemvideo.com/curso/curso-de-git-e-github/",
+            "path_img": "img/courses/git.png"
           },
           {
-            "title": "Algorithm - Programing Logic",
+            "title": "HTML 5 and CSS 3 | Module 1 - 5 | New features",
             "institution": "Curso em Video | CEV Treimanetos informatica e Serviços",
-            "hours": "40 hours",
-            "training_period": "01/01/2018 – 30/06/2018",
+            "hours": "200 hours",
+            "training_period": "01/07/2020 – studying",
             "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
-            "link": "https://www.cursoemvideo.com/curso/html5/",
-            "path_img": "img/courses/html5.jpg"
+            "link": "https://www.cursoemvideo.com/curso/html5-css3-modulo1/",
+            "path_img": "img/courses/html-css.jpg"
           }
         ]
       },

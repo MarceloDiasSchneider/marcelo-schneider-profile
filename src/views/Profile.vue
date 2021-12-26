@@ -239,6 +239,7 @@
                     </div>
                   </div>
                 </div>
+                <hr class="my-0" />
                 <div class="card-header">
                   <h5 class="card-title mb-0">{{ language.skills.title }}</h5>
                 </div>
@@ -259,6 +260,7 @@
                     </div>
                   </div>
                 </div>
+                <hr class="my-0" />
                 <div class="card-header">
                   <h5 class="card-title mb-0">
                     {{ language.education_and_training.title }}
