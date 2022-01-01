@@ -93,12 +93,12 @@
                 <div class="card-body text-center">
                   <img
                     src="img/avatars/avatar-marcelo-schneider.jpg"
-                    :alt="my_name"
+                    :alt="language.name"
                     class="img-fluid rounded-circle mb-2"
                     width="180"
                     height="180"
                   />
-                  <h5 class="card-title mb-0">{{ my_name }}</h5>
+                  <h5 class="card-title mb-0">{{ language.name }}</h5>
                   <div class="text-muted mb-2">
                     {{ language.my_profession }}
                   </div>
@@ -127,7 +127,6 @@
                         >{{ language.about.address.current.city }}</a
                       >
                     </li>
-
                     <li class="mb-1">
                       <span
                         data-feather="briefcase"
@@ -148,6 +147,16 @@
                         :href="language.about.address.from.google_maps"
                         target="blank"
                         >{{ language.about.address.from.city }}</a
+                      >
+                    </li>
+                    <li class="mb-1">
+                      <span data-feather="map-pin" class="feather-sm me-1">
+                        {{ language.about.curriculum.see_my_pdf }}
+                      </span>
+                      <a
+                        :href="language.about.curriculum.pdf_path"
+                        target="blank"
+                        >{{ language.about.curriculum.curriculum }}</a
                       >
                     </li>
                   </ul>
@@ -193,17 +202,10 @@
               <div class="card">
                 <div class="card-header">
                   <h2
-                    class="
-                      float-left
-                      h1
-                      card-title
-                      text-center
-                      mb-0
-                      ff-pushster
-                    "
+                    class="float-left h1 card-title text-center mb-0 gradient"
                     style="font-size: 40pt"
                   >
-                    {{ my_name }}
+                    {{ language.name }}
                   </h2>
                   <h5
                     class="h2 mb-3 text-center text-secondary"
@@ -329,7 +331,7 @@
             <div class="col-6 text-end">
               <p class="mb-0">
                 2021 -
-                <a href="index.html" class="text-muted">{{ my_name }}</a>
+                <a href="index.html" class="text-muted">{{ language.name }}</a>
               </p>
             </div>
           </div>
@@ -348,9 +350,7 @@ export default {
   components: {},
   data() {
     return {
-      my_name: "Marcelo Schneider",
       my_birthday: new Date(1992, 0, 14),
-      selected_language: "english",
     };
   },
   methods: {
