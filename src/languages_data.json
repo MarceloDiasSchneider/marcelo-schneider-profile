@@ -243,6 +243,39 @@
           }
         ]
       },
+      "language_skills": {
+        "title": "Language skills",
+        "items": {
+          "mother_tongue": "Mother tongue",
+          "other_language": "Others languages",
+          "level": "Level"
+        },
+        "mother_tongue": [
+          {
+            "lenguage": "Portuguese"
+          }
+        ],
+        "other_language": [
+          {
+            "lenguage": "English",
+            "level": [
+              {"title": "listening", "description": "text"},
+              {"title": "reading", "description": "text"},
+              {"title": "speaking", "description": "text"},
+              {"title": "writting", "description": "text"}
+            ]
+          },
+          {
+            "lenguage": "Italian",
+            "level": [
+              {"title": "listening", "description": "text"},
+              {"title": "reading", "description": "text"},
+              {"title": "speaking", "description": "text"},
+              {"title": "writting", "description": "text"}
+            ]
+          }
+        ]
+      },
       "social_media": "Social Media"
     },
     "portugues": {
@@ -469,6 +502,39 @@
           }
         ]
       },
+      "language_skills": {
+        "title": "Habilidades linguísticas",
+        "items": {
+          "mother_tongue": "Língua materna",
+          "other_language": "Outras línguas",
+          "level": "Nível"
+        },
+        "mother_tongue": [
+          {
+            "lenguage": "Português"
+          }
+        ],
+        "other_language": [
+          {
+            "lenguage": "Inglês",
+            "level": [
+              {"title": "listening", "description": "text"},
+              {"title": "reading", "description": "text"},
+              {"title": "speaking", "description": "text"},
+              {"title": "writting", "description": "text"}
+            ]
+          },
+          {
+            "lenguage": "Italiano",
+            "level": [
+              {"title": "listening", "description": "text"},
+              {"title": "reading", "description": "text"},
+              {"title": "speaking", "description": "text"},
+              {"title": "writting", "description": "text"}
+            ]
+          }
+        ]
+      },
       "social_media": "Mídias Sociais"
     },
     "italiano": {
@@ -692,6 +758,39 @@
             "country_address": "Rua Massenet 421, Rio de Janeiro (Brazil)",
             "link": "https://www.cursoemvideo.com/curso/html5-css3-modulo1/",
             "path_img": "img/courses/html-css.jpg"
+          }
+        ]
+      },
+      "language_skills": {
+        "title": "Abilità linguistiche",
+        "items": {
+          "mother_tongue": "Madrelingua",
+          "other_language": "Altre lingue",
+          "level": "Livello"
+        },
+        "mother_tongue": [
+          {
+            "lenguage": "Portoghesi"
+          }
+        ],
+        "other_language": [
+          {
+            "lenguage": "Englese",
+            "level": [
+              {"title": "listening", "description": "text"},
+              {"title": "reading", "description": "text"},
+              {"title": "speaking", "description": "text"},
+              {"title": "writting", "description": "text"}
+            ]
+          },
+          {
+            "lenguage": "Italiano",
+            "level": [
+              {"title": "listening", "description": "text"},
+              {"title": "reading", "description": "text"},
+              {"title": "speaking", "description": "text"},
+              {"title": "writting", "description": "text"}
+            ]
           }
         ]
       },

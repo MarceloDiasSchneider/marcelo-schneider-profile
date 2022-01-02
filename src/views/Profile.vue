@@ -186,6 +186,39 @@
                     </li>
                   </ul>
                 </div>
+                <hr class="my-0" />
+                <div class="card-body">
+                  <h5 class="h6 card-title">{{ language.language_skills.title }}</h5>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-1">
+                      <p><i class="fas fa-language"></i> <small class="text-muted">{{ language.language_skills.items.mother_tongue }}</small></p>
+                      <p 
+                        v-for="(leng, key) in language.language_skills.mother_tongue" 
+                        :key="key"
+                      >
+                        {{ leng.lenguage }}
+                      </p>
+                    </li>
+                    <li class="mb-1">
+                      <p><i class="fas fa-language"></i> <small class="text-muted">{{ language.language_skills.items.other_language }}</small></p>
+                      <div 
+                        class="mb-3"
+                        v-for="(leng, key) in language.language_skills.other_language" 
+                        :key="key"
+                      >
+                        <p class="mb-0">{{ leng.lenguage }}</p>
+                        <ul>
+                          <li 
+                            v-for="(level, key) in leng.level"
+                            :key="key"
+                          >
+                            <strong>{{ level.title }}</strong> {{level.description}}
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
