@@ -105,7 +105,7 @@
                 </div>
                 <hr class="my-0" />
                 <div class="card-body">
-                  <h5 class="h6 card-title">{{ language.skills.skill }}</h5>
+                  <h5 class="card-title">{{ language.skills.skill }}</h5>
                   <a
                     href="#"
                     v-for="(skill, key) in language.skills.skills"
@@ -116,10 +116,10 @@
                 </div>
                 <hr class="my-0" />
                 <div class="card-body">
-                  <h5 class="h6 card-title">{{ language.about.about }}</h5>
+                  <h5 class="card-title">{{ language.about.about }}</h5>
                   <ul class="list-unstyled mb-0">
                     <li class="mb-1">
-                      <span data-feather="home" class="feather-sm me-1"></span>
+                      <i class="fas fa-home me-1"></i>
                       {{ language.about.address.current.lives_in }}
                       <a
                         :href="language.about.address.current.google_maps"
@@ -128,20 +128,14 @@
                       >
                     </li>
                     <li class="mb-1">
-                      <span
-                        data-feather="briefcase"
-                        class="feather-sm me-1"
-                      ></span>
+                      <i class="fas fa-map-marker-alt me-1"></i>
                       {{ language.about.work_at.work_at }}
                       <a :href="language.about.work_at.site" target="black">{{
                         language.about.work_at.company
                       }}</a>
                     </li>
                     <li class="mb-1">
-                      <span
-                        data-feather="map-pin"
-                        class="feather-sm me-1"
-                      ></span>
+                      <i class="fas fa-briefcase me-1"></i>
                       {{ language.about.address.from.from }}
                       <a
                         :href="language.about.address.from.google_maps"
@@ -150,9 +144,8 @@
                       >
                     </li>
                     <li class="mb-1">
-                      <span data-feather="map-pin" class="feather-sm me-1">
-                        {{ language.about.curriculum.see_my_pdf }}
-                      </span>
+                      <i class="fas fa-sticky-note me-1"></i>
+                      {{ language.about.curriculum.see_my_pdf }}
                       <a
                         :href="language.about.curriculum.pdf_path"
                         target="blank"
@@ -163,16 +156,16 @@
                 </div>
                 <hr class="my-0" />
                 <div class="card-body">
-                  <h5 class="h6 card-title">{{ language.social_media }}</h5>
+                  <h5 class="card-title">{{ language.social_media }}</h5>
                   <ul class="list-unstyled mb-0">
                     <li class="mb-1">
-                      <span class="fab fa-facebook fa-fw me-1"></span>
+                      <i class="fab fa-facebook fa-fw me-1"></i>
                       <a href="https://www.facebook.com/lagocelo" target="black"
                         >Facebook</a
                       >
                     </li>
                     <li class="mb-1">
-                      <span class="fab fa-instagram fa-fw me-1"></span>
+                      <i class="fab fa-instagram fa-fw me-1"></i>
                       <a
                         href="https://www.instagram.com/marcelo.dias.schneider/"
                         target="black"
@@ -180,7 +173,7 @@
                       >
                     </li>
                     <li class="mb-1">
-                      <span class="fab fa-linkedin fa-fw me-1"></span>
+                      <i class="fab fa-linkedin fa-fw me-1"></i>
                       <a
                         href="https://www.linkedin.com/in/marcelo-dias-schneider-6392ba94/"
                         target="black"
@@ -188,7 +181,7 @@
                       >
                     </li>
                     <li class="mb-1">
-                      <span class="fab fa-github fa-fw me-1"></span>
+                      <i class="fab fa-github fa-fw me-1"></i>
                       <a href="https://github.com/MarceloDiasSchneider"
                         >Github</a
                       >
@@ -203,7 +196,7 @@
                   <ul class="list-unstyled mb-0">
                     <li class="mb-1">
                       <p>
-                        <i class="fas fa-language"></i>
+                        <i class="fas fa-language me-1"></i>
                         <small class="text-muted">{{
                           language.language_skills.items.mother_tongue
                         }}</small>
@@ -213,12 +206,12 @@
                           .mother_tongue"
                         :key="key"
                       >
-                        {{ leng.lenguage }}
+                        <strong>{{ leng.lenguage }}</strong>
                       </p>
                     </li>
                     <li class="mb-1">
                       <p>
-                        <i class="fas fa-language"></i>
+                        <i class="fas fa-language me-1"></i>
                         <small class="text-muted">{{
                           language.language_skills.items.other_language
                         }}</small>
@@ -229,10 +222,12 @@
                           .other_language"
                         :key="key"
                       >
-                        <p class="mb-0">{{ leng.lenguage }}</p>
+                        <p class="mb-0">
+                          <strong>{{ leng.lenguage }}</strong>
+                        </p>
                         <ul>
                           <li v-for="(level, key) in leng.level" :key="key">
-                            <strong>{{ level.title }}</strong>
+                            {{ level.title }}
                             {{ level.description }}
                           </li>
                         </ul>
@@ -247,13 +242,13 @@
               <div class="card">
                 <div class="card-header">
                   <h2
-                    class="float-left h1 card-title text-center mb-0 gradient"
+                    class="float-left card-title text-center mb-0 gradient"
                     style="font-size: 40pt"
                   >
                     {{ language.name }}
                   </h2>
                   <h5
-                    class="h2 mb-3 text-center text-secondary"
+                    class="mb-3 text-center text-secondary"
                     style="font-size: 25pt"
                   >
                     {{ language.my_profession }}
@@ -288,7 +283,7 @@
                 </div>
                 <hr class="my-0" />
                 <div class="card-header">
-                  <h5 class="card-title mb-0">{{ language.skills.title }}</h5>
+                  <h5 class="h1 mb-0">{{ language.skills.title }}</h5>
                 </div>
                 <div class="card-body h-100 row">
                   <div
@@ -309,7 +304,7 @@
                 </div>
                 <hr class="my-0" />
                 <div class="card-header">
-                  <h5 class="card-title mb-0">
+                  <h5 class="h1 mb-0">
                     {{ language.education_and_training.title }}
                   </h5>
                 </div>
