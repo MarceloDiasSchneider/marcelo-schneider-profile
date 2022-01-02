@@ -194,44 +194,41 @@
                     {{ language.language_skills.title }}
                   </h5>
                   <ul class="list-unstyled mb-0">
-                    <li class="mb-1">
-                      <p>
+                    <li
+                      class="mb-1"
+                      v-for="(leng, key) in language.language_skills
+                        .mother_tongue"
+                      :key="key"
+                    >
+                      <p class="my-0">
                         <i class="fas fa-language me-1"></i>
-                        <small class="text-muted">{{
-                          language.language_skills.items.mother_tongue
-                        }}</small>
-                      </p>
-                      <p
-                        v-for="(leng, key) in language.language_skills
-                          .mother_tongue"
-                        :key="key"
-                      >
                         <strong>{{ leng.lenguage }}</strong>
                       </p>
-                    </li>
-                    <li class="mb-1">
-                      <p>
-                        <i class="fas fa-language me-1"></i>
-                        <small class="text-muted">{{
-                          language.language_skills.items.other_language
-                        }}</small>
+                      <p class="my-0">
+                        <small class="text-muted ms-2">
+                          {{ language.language_skills.items.mother_tongue }}
+                        </small>
                       </p>
-                      <div
-                        class="mb-3"
-                        v-for="(leng, key) in language.language_skills
-                          .other_language"
+                    </li>
+                    <li
+                      class="mb-1"
+                      v-for="(leng, key) in language.language_skills
+                        .other_language"
+                      :key="key"
+                    >
+                      <p class="my-0">
+                        <i class="fas fa-language me-1"></i>
+                        <strong>{{ leng.lenguage }}</strong>
+                      </p>
+                      <p
+                        class="my-0"
+                        v-for="(level, key) in leng.level"
                         :key="key"
                       >
-                        <p class="mb-0">
-                          <strong>{{ leng.lenguage }}</strong>
-                        </p>
-                        <ul>
-                          <li v-for="(level, key) in leng.level" :key="key">
-                            {{ level.title }}
-                            {{ level.description }}
-                          </li>
-                        </ul>
-                      </div>
+                        <small class="text-muted ms-2">
+                          {{ level.title }}: {{ level.description }}
+                        </small>
+                      </p>
                     </li>
                   </ul>
                 </div>
