@@ -20,6 +20,7 @@
   },
   "lenguages": {
     "english": {
+      "name": "Marcelo Dias Schneider",
       "my_profession": "Fullstack Developer",
       "profile_details": "Profile Details",
       "about": {
@@ -40,6 +41,11 @@
           "work_at": "I work at",
           "company": "Sellmasters",
           "site": "https://www.sellmasters.it/"
+        }, 
+        "curriculum": {
+          "see_my_pdf": "See my ",
+          "curriculum": "curriculum",
+          "pdf_path": "/pdf/dias-schneider-marcelo-en.pdf"
         }
       },
       "skills": {
@@ -279,6 +285,7 @@
       "social_media": "Social Media"
     },
     "portugues": {
+      "name": "Marcelo Dias Schneider",
       "my_profession": "Desenvolvedor Fullstack",
       "profile_details": "Detalhes de Perfil",
       "about": {
@@ -299,6 +306,11 @@
           "work_at": "Trabalho em",
           "company": "Sellmasters",
           "site": "https://www.sellmasters.it/"
+        },
+        "curriculum": {
+          "see_my_pdf": "Veja meu ",
+          "curriculum": "currículo",
+          "pdf_path": "/pdf/dias-schneider-marcelo-en.pdf"
         }
       },
       "skills": {
@@ -538,6 +550,7 @@
       "social_media": "Mídias Sociais"
     },
     "italiano": {
+      "name": "Marcelo Dias Schneider",
       "my_profession": "Sviluppatore Fullstack",
       "profile_details": "Dettagli del Profilo",
       "about": {
@@ -558,6 +571,11 @@
           "work_at": "Lavoro a",
           "company": "Sellmasters",
           "site": "https://www.sellmasters.it/"
+        },
+        "curriculum": {
+          "see_my_pdf": "Guarda il mio ",
+          "curriculum": "curriculum",
+          "pdf_path": "/pdf/dias-schneider-marcelo-en.pdf"
         }
       },
       "skills": {
@@ -796,5 +814,9 @@
       },
       "social_media": "Social Media"
     }
+  },
+  "rascunho": {
+    "r1": "I'm Marcelo Schneider I really enjoy playing football, playing video games and discovering new devices for home automation. I've always wanted to get to know new countries and cultures, in 2010 I had the pleasure of getting to know New Zealand, where I could improve my English. In 2018 I started to do my Italian citizenship and since February 2020.",
+    "r2": "I have been living in Rome, Italy. I am very passionate about technology, a few years ago I had my first contact with HTML, CSS and PHP, since then I have always been curious to know how each site I browsed was made, looking for information on the internet I ended up finding several HTML 5 courses, CSS 3, PHP, JavaScript and MySQL. After having some knowledge of these languages I decided to work as a programmer and in this environment with other developers I started to use Laravel 8 Frameworks and VueJs to streamline the development of applications."
   }
 }
