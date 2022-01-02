@@ -282,7 +282,10 @@
           }
         ]
       },
-      "social_media": "Social Media"
+      "social_media": "Social Media",
+      "footer": {
+        "string": "Full-stack Web Developer with love!"
+      }
     },
     "portugues": {
       "name": "Marcelo Dias Schneider",
@@ -547,7 +550,10 @@
           }
         ]
       },
-      "social_media": "Mídias Sociais"
+      "social_media": "Mídias Sociais",
+      "footer": {
+        "string": "Desenvolvedor Web Full-stack com muito amor!"
+      }
     },
     "italiano": {
       "name": "Marcelo Dias Schneider",
@@ -812,7 +818,10 @@
           }
         ]
       },
-      "social_media": "Social Media"
+      "social_media": "Social Media",
+      "footer": {
+        "string": "Sviluppatore Web Full-stack con amore!"
+      }
     }
   },
   "rascunho": {
