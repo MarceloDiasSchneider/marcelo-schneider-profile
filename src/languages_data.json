@@ -45,7 +45,7 @@
         "curriculum": {
           "see_my_pdf": "See my ",
           "curriculum": "curriculum",
-          "pdf_path": "/pdf/dias-schneider-marcelo-en.pdf"
+          "pdf_path": "https://europa.eu/europass/eportfolio/screen/share/644e3243-19ec-4906-b442-10347783ded2?lang=en"
         }
       },
       "skills": {
@@ -265,19 +265,13 @@
           {
             "lenguage": "English",
             "level": [
-              {"title": "listening", "description": "text"},
-              {"title": "reading", "description": "text"},
-              {"title": "speaking", "description": "text"},
-              {"title": "writting", "description": "text"}
+              {"title": "level", "description": "B2 - Independent user"}
             ]
           },
           {
             "lenguage": "Italian",
             "level": [
-              {"title": "listening", "description": "text"},
-              {"title": "reading", "description": "text"},
-              {"title": "speaking", "description": "text"},
-              {"title": "writting", "description": "text"}
+              {"title": "level", "description": "B2 - Independent user"}
             ]
           }
         ]
@@ -313,7 +307,7 @@
         "curriculum": {
           "see_my_pdf": "Veja meu ",
           "curriculum": "currículo",
-          "pdf_path": "/pdf/dias-schneider-marcelo-en.pdf"
+          "pdf_path": "https://europa.eu/europass/eportfolio/screen/share/644e3243-19ec-4906-b442-10347783ded2?lang=en"
         }
       },
       "skills": {
@@ -533,19 +527,13 @@
           {
             "lenguage": "Inglês",
             "level": [
-              {"title": "listening", "description": "text"},
-              {"title": "reading", "description": "text"},
-              {"title": "speaking", "description": "text"},
-              {"title": "writting", "description": "text"}
+              {"title": "Nível", "description": "B2 - Usuario autonomo"}
             ]
           },
           {
             "lenguage": "Italiano",
             "level": [
-              {"title": "listening", "description": "text"},
-              {"title": "reading", "description": "text"},
-              {"title": "speaking", "description": "text"},
-              {"title": "writting", "description": "text"}
+              {"title": "Nível", "description": "B2 - Usuario autonomo"}
             ]
           }
         ]
@@ -581,7 +569,7 @@
         "curriculum": {
           "see_my_pdf": "Guarda il mio ",
           "curriculum": "curriculum",
-          "pdf_path": "/pdf/dias-schneider-marcelo-en.pdf"
+          "pdf_path": "https://europa.eu/europass/eportfolio/screen/share/309a0a4a-2682-40f4-be0f-7c7c93f1d463?lang=en"
         }
       },
       "skills": {
@@ -801,19 +789,13 @@
           {
             "lenguage": "Englese",
             "level": [
-              {"title": "listening", "description": "text"},
-              {"title": "reading", "description": "text"},
-              {"title": "speaking", "description": "text"},
-              {"title": "writting", "description": "text"}
+              {"title": "Livelo", "description": "B2 - Utente autonomo"}
             ]
           },
           {
             "lenguage": "Italiano",
             "level": [
-              {"title": "listening", "description": "text"},
-              {"title": "reading", "description": "text"},
-              {"title": "speaking", "description": "text"},
-              {"title": "writting", "description": "text"}
+              {"title": "Livelo", "description": "B2 - Utente autonomo"}
             ]
           }
         ]
