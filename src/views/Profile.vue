@@ -6,11 +6,11 @@
         <div class="container-fluid p-0" style="margin-top: 50px">
           <div class="row">
             <div class="col-md-4 col-xl-3">
-              <Cardrigth />
+              <Cardleft />
             </div>
 
             <div class="col-md-8 col-xl-9">
-              <Cardleft />
+              <Cardrigth />
             </div>
           </div>
         </div>

@@ -6,11 +6,10 @@
     <a>
       <i class="hamburger align-self-center"></i>
     </a>
-
     <ul class="navbar-nav">
       <li class="nav-item px-2 dropdown">
         <a
-          class="nav-link dropdown-toggle"
+          class="h3 m-0 p-0 nav-link"
           href="#"
           id="servicesDropdown"
           role="button"
@@ -18,46 +17,21 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Mega menu
+          {{ language.name }}
         </a>
-        <div
-          class="dropdown-menu dropdown-menu-start dropdown-mega"
-          aria-labelledby="servicesDropdown"
+      </li>
+      <li class="nav-item px-2 dropdown d-none d-md-block">
+        <a
+          class="h3 m-0 p-0 nav-link"
+          href="#"
+          id="servicesDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
         >
-          <div class="d-md-flex align-items-start justify-content-start">
-            <div class="dropdown-mega-list">
-              <div class="dropdown-header">UI Elements</div>
-              <a class="dropdown-item" href="#">Alerts</a>
-              <a class="dropdown-item" href="#">Buttons</a>
-              <a class="dropdown-item" href="#">Cards</a>
-              <a class="dropdown-item" href="#">Carousel</a>
-              <a class="dropdown-item" href="#">General</a>
-              <a class="dropdown-item" href="#">Grid</a>
-              <a class="dropdown-item" href="#">Modals</a>
-              <a class="dropdown-item" href="#">Tabs</a>
-              <a class="dropdown-item" href="#">Typography</a>
-            </div>
-            <div class="dropdown-mega-list">
-              <div class="dropdown-header">Forms</div>
-              <a class="dropdown-item" href="#">Layouts</a>
-              <a class="dropdown-item" href="#">Basic Inputs</a>
-              <a class="dropdown-item" href="#">Input Groups</a>
-              <a class="dropdown-item" href="#">Advanced Inputs</a>
-              <a class="dropdown-item" href="#">Editors</a>
-              <a class="dropdown-item" href="#">Validation</a>
-              <a class="dropdown-item" href="#">Wizard</a>
-            </div>
-            <div class="dropdown-mega-list">
-              <div class="dropdown-header">Tables</div>
-              <a class="dropdown-item" href="#">Basic Tables</a>
-              <a class="dropdown-item" href="#">Responsive Table</a>
-              <a class="dropdown-item" href="#">Table with Buttons</a>
-              <a class="dropdown-item" href="#">Column Search</a>
-              <a class="dropdown-item" href="#">Muulti Selection</a>
-              <a class="dropdown-item" href="#">Ajax Sourced Data</a>
-            </div>
-          </div>
-        </div>
+          {{ language.my_profession }}
+        </a>
       </li>
     </ul>
 
