@@ -46,6 +46,22 @@
     </div>
     <hr class="my-0" />
     <div class="card-header">
+      <h5 class="h1 mb-0">{{ language.skills.title }}</h5>
+    </div>
+    <div class="card-body h-100 row">
+      <div
+        class="d-flex align-items-start col-lg-6 mb-3"
+        v-for="(skill, key) in language.skills.skills"
+        :key="key"
+      >
+        <img :src="skill.path_img" width="36" class="me-2" :alt="skill.name" />
+        <div class="flex-grow-1">
+          <strong>{{ skill.name }}</strong> {{ skill.description }}
+        </div>
+      </div>
+    </div>
+    <hr class="my-0" />
+    <div class="card-header">
       <h5 class="h1 mb-0">
         {{ language.education_and_training.title }}
       </h5>

@@ -4,8 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "prebuild": "move .\\dist\\.git .\\temp",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "postbuild": "move .\\temp\\.git .\\dist",
+    "lint": "vue-cli-service lint",
+    "push": "git add . && git commit -m 'auto-commit' && git push"
   },
   "dependencies": {
     "bootstrap": "5.0.2",
